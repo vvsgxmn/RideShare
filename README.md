@@ -20,17 +20,17 @@
 
 ---
 
-# 基于SpringBoot+Vue的顺风车管理系统（高德地图路线预览）
+# 基于SpringBoot+Vue的顺风车管理系统
 
 ![Spring Boot](https://img.shields.io/badge/-Spring%20Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white) ![Vue3](https://img.shields.io/badge/-Vue3-grey?style=flat-square) ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![MyBatis](https://img.shields.io/badge/-MyBatis-000000?style=flat-square&logo=mybatis&logoColor=white) 
 
 ## 项目介绍
 
-RideShare 是一款面向通勤与城际拼车的顺风车管理平台，**重点集成高德地图 JS API（@vuemap/vue-amap）**：行程/需求详情页可按起终点与途经经停点自动驾车规划、走廊筛点纠偏同名站，地图上标注起终点与途经点并绘制真实路网路线。业务覆盖车主资质审核、车辆档案、行程与需求大厅、拼车下单托管、司乘私聊、双向评价与 AI 出行向导，适合毕设、课设与学习参考。
+RideShare 是一款面向通勤与城际拼车的顺风车管理平台，**重点支持地图路线预览**：行程/需求详情页可按起终点与途经经停点自动驾车规划、走廊筛点纠偏同名站，地图上标注起终点与途经点并绘制真实路网路线。业务覆盖车主资质审核、车辆档案、行程与需求大厅、拼车下单托管、司乘私聊、双向评价与 AI 出行向导，适合毕设、课设与学习参考。
 
 ## 主要功能模块
 
-- **高德地图路线预览（核心亮点）**：@vuemap/vue-amap 嵌入行程/需求详情，起终点 PlaceSearch + Driving 驾车规划，途经点按自身城市检索并用路线走廊过滤错误同名点，地图标注与折线同步展示
+- **地图路线预览（核心亮点）**：行程/需求详情嵌入在线地图，起终点检索与驾车路径规划，途经点按自身城市检索并用路线走廊过滤错误同名点，地图标注与折线同步展示
 - **行程大厅模块**：市内通勤/城际/节假返乡行程发布与筛选，卡片展示途经点摘要，详情页联动地图路线
 - **需求大厅模块**：乘客发布出行需求，车主浏览接洽，详情同样支持地图路线预览
 - **拼车订单模块**：下单座位扣减、钱包托管支付、确认/出行/完单/取消退款状态机
@@ -42,7 +42,7 @@ RideShare 是一款面向通勤与城际拼车的顺风车管理平台，**重�
 ## 技术架构
 
 - **后端**：Spring Boot + MyBatis-Plus + JWT + Lombok
-- **前端**：Vue 3 + TypeScript + Vue Router + Pinia + Element Plus + Vite + ECharts + @vuemap/vue-amap（高德地图）
+- **前端**：Vue 3 + TypeScript + Vue Router + Pinia + Element Plus + Vite + ECharts
 - **数据库**：MySQL
 
 <!-- screenshots-start -->
